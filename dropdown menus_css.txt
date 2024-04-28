@@ -1,0 +1,56 @@
+dropdown menus;
+
+
+<!DOCTYPE html>
+<html>
+<body>
+<link rel="stylesheet" href="style.css">
+
+	<div class="dropdown">
+		<button class="button">Swords</button>
+		<div class="content">
+			<a href="https://en.wikipedia.org/wiki/Katana" target="_blank">Katana</a>
+			<a href="https://en.wikipedia.org/wiki/Talwar" target="_blank">Talwar</a>
+			<a href="https://en.wikipedia.org/wiki/Sabre" target="_blank">Sabre</a>
+		</div>
+	</div>
+	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam odit, hic deserunt dolorum vel cum natus, incidunt porro eaque provident sapiente iste autem inventore? Sed soluta amet repellendus maxime cum!</p>
+
+</body>
+</html>
+
+
+style.css
+
+.dropdown button{
+    background-color: aqua;
+    color: black;
+    padding: 10px 15px;
+    border-radius: none;
+    cursor: pointer;
+}
+.dropdown a{
+    display: block;
+    color: black;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+.dropdown .content{
+    display: none;
+    position: absolute;
+    background-color: azure;
+    min-width: 100px;
+    box-shadow: 2px 2px 5px chartreuse;
+}
+.dropdown:hover .content{
+    display: block;
+}
+.dropdown:hover button{
+    background-color: antiquewhite;
+}
+.dropdown a:hover{
+    background-color: bisque;
+}
+.dropdown{
+    display: inline-block;
+}
